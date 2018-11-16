@@ -7,6 +7,7 @@ import com.github.sunxikai928.factory.two.TwoClient;
 import org.junit.Test;
 
 /**
+ * 工厂测试类
  * Created by sunxikai on 18/11/16.
  */
 public class Client {
