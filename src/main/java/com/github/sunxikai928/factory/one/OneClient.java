@@ -6,6 +6,6 @@ package com.github.sunxikai928.factory.one;
 public class OneClient {
     public void test() {
         EasyFactory easyFactory = EasyFactory.getNewEasyFactory();
-        System.out.println(easyFactory.production());
+        easyFactory.production();
     }
 }

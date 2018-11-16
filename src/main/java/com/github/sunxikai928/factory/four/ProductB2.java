@@ -11,6 +11,6 @@ public class ProductB2 extends BaseClass implements ProductB {
 
     @Override
     public void product() {
-        System.out.println("型号为[2]的螺丝帽:" + this.getClassName());
+        println("型号为[2]的螺丝帽:" + this.getClassName());
     }
 }

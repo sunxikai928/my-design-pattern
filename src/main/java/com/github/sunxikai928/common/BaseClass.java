@@ -8,4 +8,8 @@ public class BaseClass {
     protected String getClassName() {
         return this.getClass().getName();
     }
+
+    protected void println(String str) {
+        System.out.println(str);
+    }
 }

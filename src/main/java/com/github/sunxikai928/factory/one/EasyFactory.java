@@ -24,7 +24,7 @@ public class EasyFactory extends BaseClass {
         return new EasyFactory();
     }
 
-    public String production() {
-        return "简单工厂生产的产品 : " + this.getClassName();
+    public void production() {
+        println("简单工厂生产的产品 : " + this.getClassName());
     }
 }

@@ -9,6 +9,6 @@ import com.github.sunxikai928.common.BaseClass;
 public class ProductA2 extends BaseClass implements ProductA {
     @Override
     public void product() {
-        System.out.println("型号为[2]的螺丝头:" + this.getClassName());
+        println("型号为[2]的螺丝头:" + this.getClassName());
     }
 }

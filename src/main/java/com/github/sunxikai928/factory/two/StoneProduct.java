@@ -8,6 +8,6 @@ import com.github.sunxikai928.common.BaseClass;
 public class StoneProduct extends BaseClass implements Product {
     @Override
     public void production() {
-        System.out.println("具体产品 : " + this.getClassName());
+        println("具体产品 : " + this.getClassName());
     }
 }

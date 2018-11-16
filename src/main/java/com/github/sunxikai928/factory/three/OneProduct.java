@@ -10,6 +10,6 @@ import com.github.sunxikai928.common.BaseClass;
 public class OneProduct extends BaseClass implements Product {
     @Override
     public void product() {
-        System.out.println("一号产品:" + getClassName());
+        println("一号产品:" + getClassName());
     }
 }
