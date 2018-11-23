@@ -15,19 +15,19 @@ public class Client extends BaseClass {
 
     @Test
     public void test1() {
-        String name = null;
-        String name1 = Son1RegisterSingleton.class.getName();
-        String name2 = Son2RegisterSingleton.class.getName();
-        RegisterSingleton r = RegisterSingleton.getInstance(name);
-        RegisterSingleton rr = RegisterSingleton.getInstance(name);
-        RegisterSingleton r1 = RegisterSingleton.getInstance(name1);
-        RegisterSingleton rr1 = RegisterSingleton.getInstance(name1);
-        RegisterSingleton r2 = RegisterSingleton.getInstance(name2);
-        RegisterSingleton rr2 = RegisterSingleton.getInstance(name2);
+        RegisterSingleton r = RegisterSingleton.getInstance();
+        RegisterSingleton rr = RegisterSingleton.getInstance();
+        RegisterSingleton r1 = Son1RegisterSingleton.getInstance();
+        RegisterSingleton rr1 = Son1RegisterSingleton.getInstance();
+        RegisterSingleton r2 = Son2RegisterSingleton.getInstance();
+        RegisterSingleton rr2 = Son2RegisterSingleton.getInstance();
         // 3次单例获取的都是相同的对象
         System.out.println(r == rr);
         System.out.println(r1 == rr1);
         System.out.println(r2 == rr2);
+        r.product();
+        r1.product();
+        r2.product();
     }
 
     @Test
